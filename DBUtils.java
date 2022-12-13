@@ -7,12 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.*;
-/**
- * Project Name: Quiz Game
- * COP 3330C Object Oriented Programming
- * written by: @author Nenad Jovanovic (njovanovic1@mail.valenciacollege.edu)
- * created: 12/5/22
- */
+
                               /** Method that`s adding players and their scores to MySQl DB */
 public class DBUtils {
     static ObservableList<Player> list;
@@ -24,7 +19,7 @@ public class DBUtils {
             throw new RuntimeException(e);
         }
         try{
-            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/game", "java_user", "java123");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ADD DATABASE", "ADD USERNAME", "ADD PASSWORD");
             PreparedStatement pStat = null;
             pStat = conn.prepareStatement("INSERT INTO `players`(player_name,score) VALUES(?,?)");
             pStat.setString(1, name);
@@ -47,8 +42,7 @@ public class DBUtils {
              throw new RuntimeException(e);
              }
              try{
-             Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/game", "java_user", "java123");
-
+             Connection conn = DriverManager.getConnection ("jdbc:mysql://127.0.0.1:3306/ADD DATABASE", "ADD USERNAME", "ADD PASSWORD");
                  list = FXCollections.observableArrayList();
                  PreparedStatement ps = conn.prepareStatement("SELECT * FROM players");
                  ResultSet rs = ps.executeQuery();
