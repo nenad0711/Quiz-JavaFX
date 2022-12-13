@@ -1,10 +1,4 @@
 
-/**
- * Project Name: Quiz Game
- * COP 3330C Object Oriented Programming
- * written by: @author Nenad Jovanovic (njovanovic1@mail.valenciacollege.edu)
- * created: 12/5/22
- */
 
                                                  /** Main Class */
 package com.example.final_project;
