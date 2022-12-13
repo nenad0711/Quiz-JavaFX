@@ -1,9 +1,4 @@
-/**
- * Project Name: Quiz Game
- * COP 3330C Object Oriented Programming
- * written by: @author Nenad Jovanovic (njovanovic1@mail.valenciacollege.edu)
- * created: 12/5/22
- */
+
 
 /** FileInput class that reads data from the given txt.file and process
     them into 6 ArrayLists(2 lists for questions and 4 Lists for possible answers).
